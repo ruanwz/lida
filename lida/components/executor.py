@@ -151,6 +151,7 @@ class ChartExecutor:
             # print colum dtypes
             for code in code_specs:
                 try:
+                    print(code)
                     ex_locals = get_globals_dict(code, data)
                     # print(ex_locals)
                     exec(code, ex_locals)
